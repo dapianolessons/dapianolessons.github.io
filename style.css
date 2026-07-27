@@ -451,3 +451,35 @@ width: 100%;
 .highlight {
   color: #03bfb5;
 }
+
+.hero-title {
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
+}
+
+.hero-subtext {
+  font-size: clamp(0.85rem, 3vw, 1rem);
+}
+
+.logo,
+.logo-img {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+}
+
+.person-text h2,
+.section-title,
+.engines-text h2 {
+  font-size: clamp(1.2rem, 5vw, 1.8rem);
+}
+
+.person-text p,
+.for-list,
+.testimonial-card p,
+.engines-text p {
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+}
+
+.book-btn,
+.lesson-btn {
+  font-size: clamp(0.85rem, 3vw, 1.1rem);
+  padding: clamp(0.5rem, 2vw, 0.75rem) clamp(1rem, 3vw, 1.5rem);
+}
