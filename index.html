@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Piano Lessons & Music Theory | DaPiano Lessons</title>
+<meta name="description" content="Personalized online piano lessons and ABRSM exam preparation for all levels, Grade 1–8. Book a lesson today and start improving your piano skills and music theory knowledge.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <header class="site-header">
+  <img src="images/logo.png" alt="Company Logo" class="logo-img">
+  <button class="book-btn" onclick="document.getElementById('booking').scrollIntoView({behavior: 'smooth'})">BOOK NOW</button>
+</header>   
+
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">Get ready for <span class="highlight">International Piano and Music Theory Exam</span> now</h1>
+    <p class="hero-subtext">Personalized piano lessons for all ages and skill levels, every lesson tailored to your needs.</p>
+    <button class="lesson-btn" onclick="document.getElementById('booking').scrollIntoView({behavior: 'smooth'})">BOOK A LESSON</button>
+  </div>
+</section>
+
+<section class="about-person">
+  <div class="person-image">
+    <img src="images/profile.jpg" alt="Toto Wolff">
+  </div>
+  <div class="person-text">
+    <h2>Meet Your Instructor</h2>
+    <p>Hi！I'm Priska, a registered professional piano teacher with the Associated Board of The Royal Schools of Music
+(ABRSM) London, holding a Master’s Degree in Education and Bachelor’s Degree in Music
+Education, Piano Major. Over 20 years of experience teaching students of all ages and skill levels
+from beginners to ABRSM Grade 8 both children and adults.</p>
+<p> • Online piano lessons for all levels, from ABRSM Grade 1 to Grade 8</p>
+<p> • ABRSM exam preparation for both Practical and Music Theory exams</p>
+<p> • Personalized piano lesson and music theory lesson plans tailored to each student's goals ＆ learning style</p>
+  </div>
+</section>
+
+<section class="this-is-for">
+  <div class="this-is-for-grid">
+  <div class="person-text">
+    <h2>Who This is for</h2>
+    <ol class="for-list">
+      <li>ABRSM, Trinity, & LCM exam candidates</li>
+      <li>Young beginners (4+), teenagers, & adult learners</li>
+      <li>Learners who need personalised one-on-one online piano lessons</li>
+      <li>Students interested in learning the piano and/or music theory</li>
+    </ol>
+  </div>
+  
+  <div class="person-text">
+    <h2>What's Included</h2>
+    <ol class="for-list">
+      <li>Weekly online private 60-minute lessons</li>
+      <li>Weekly feedback on homework + homework guidance + clear studying strategies</li>
+      <li>Exam preparation materials, mock tests, and quizzes</li>
+      <li>Personalised email recap to parent(s) to create accountability and ensure the student feels supported both in and out of class</li>
+    </ol>
+  </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <h2 class="section-title">What Parents Say </h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+  <p class="quote-text">"Had the best sessions with Miss Priska in preparation for ABRSM exams for my 2 so sons sessions were booked immediately and she was available promptly for the sessions. Very grateful, and my sons found her to be very helpful and give great tips ready for the exam..would highly recommend"</p>
+  <p class="quote-author">— zuzzyzuzet (United Kingdom) </p>
+</div>
+<div class="testimonial-card">
+  <p class="quote-text">"Priska provided an exceptional lesson! My daughter is planning to take the ABRSM Grade 5 Music Theory exam despite having no prior theory knowledge. Priska explained everything so well and gave her a clear roadmap on how to study effectively. We will absolutely be booking more lessons soon."</p>
+  <p class="quote-author">— jaramjeon (South Korea) </p>
+</div>
+<div class="testimonial-card">
+  <p class="quote-text">"The kids always have good classes with her. They even told me they wanted to give her 10 stars, but there's only five available, that's how much they like her classes!"</p>
+  <p class="quote-author">— titoguapito (United Kingdom) </p>
+  <p class="quote-detail">Parent of 2 Grade 2 ABRSM Music Theory students with Distinction </p>
+</div>
+</section>
+
+
+<section class="engines" id="booking">
+  <div class="engines-text">
+    <h2>Ready to get started?</h2>
+    <p>Book your first lesson or request a free trial session today!</p>
+  </div>
+  
+  <div class="engines-form">
+  <form id="bookingForm" action="https://formspree.io/f/xdaqpvle" method="POST">
+    <div class="field-group">
+      <input type="text" id="name" name="name" placeholder="Name" required>
+      <span class="error-msg" id="nameError"></span>
+    </div>
+    
+    <div class="field-group">
+      <input type="email" id="email" name="email" placeholder="Email" required>
+      <span class="error-msg" id="emailError"></span>
+    </div>
+    
+    <div class="field-group">
+      <input type="tel" id="phone" name="phone" placeholder="Phone (e.g. +1 4155551234)" required>
+      <span class="error-msg" id="phoneError"></span>
+    </div>
+    
+    <div class="field-group">
+  <textarea id="message" name="message" placeholder="Tell me about your goals..." rows="3"></textarea>
+  <span class="error-msg" id="messageError"></span>
+</div>
+    
+    <button type="submit" id="engineBookBtn" class="lesson-btn" disabled>BOOK NOW</button>
+  </form>
+  <p id="formSuccessMsg" class="form-success-msg"></p>
+</div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-hours">
+    <h3>Hours</h3>
+    <p>Mon – Sat: 05:00 - 00:00 (GMT+7) </p>
+    <p>Sunday: Closed</p>
+  </div>
+  
+  <div class="footer-connect">
+    <h3>Connect with me</h3>
+    <div class="footer-icons">
+      <a href="https://instagram.com/dapianolessons" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://threads.net/@dapianolessons" target="_blank" aria-label="Threads"><i class="fa-brands fa-threads"></i></a>
+      <a href="https://wa.me/6281219789195" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://facebook.com/share/196ee6Nxg4" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+    <p class="footer-email">da.pianodom@gmail.com</p>
+    <p class="footer-phone">+62 812 1978 9195</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
