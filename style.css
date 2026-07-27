@@ -483,3 +483,43 @@ width: 100%;
   font-size: clamp(0.85rem, 3vw, 1.1rem);
   padding: clamp(0.5rem, 2vw, 0.75rem) clamp(1rem, 3vw, 1.5rem);
 }
+
+@media (max-width: 768px) {
+  .site-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .footer-connect {
+    text-align: left;
+    width: 100%;
+  }
+
+  .footer-icons {
+    justify-content: flex-start;
+  }
+
+  .about-person,
+.this-is-for {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  aspect-ratio: unset;
+  height: auto;
+  overflow: visible;
+}
+
+.person-image {
+  max-width: 180px;
+  width: 100%;
+  margin: 0 auto;
+  order: -1;
+}
+
+.person-text {
+  width: 100%;
+}
+}
