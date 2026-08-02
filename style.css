@@ -91,6 +91,7 @@ body {
 
 .hero-title {
   color: #fff;
+  text-wrap: balance;
   font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -547,4 +548,19 @@ width: 100%;
 .person-text {
   width: 100%;
 }
+}
+
+.this-is-for {
+  padding: 2rem 1.5rem;
+  box-sizing: border-box;
+}
+
+.this-is-for-grid {
+  width: 100%;
+  max-width: 100%;
+}
+
+.this-is-for-grid .person-text {
+  width: 100%;
+  box-sizing: border-box;
 }
